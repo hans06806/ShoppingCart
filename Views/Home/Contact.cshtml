@@ -1,0 +1,72 @@
+﻿@{
+    ViewData["Title"] = "Contact";
+}
+
+<h2>@ViewData["Message"]</h2>
+
+<div class="container body-content">
+    <div class="container">
+        <div class="col-md-12">
+            <div id="divEditArea">
+                <div class="row">
+                    <div class="col-md-2">
+                        <span id="MainContent_PublicPageContent_lblName">Name</span>
+                    </div>
+                    <div class="col-md-10">
+                        <input name="ctl00$ctl00$MainContent$PublicPageContent$txtName" type="text" id="MainContent_PublicPageContent_txtName" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-2">
+                        <span id="MainContent_PublicPageContent_lblEmail">Email</span>
+                    </div>
+                    <div class="col-md-10">
+                        <input name="ctl00$ctl00$MainContent$PublicPageContent$txtEmail" type="email" id="MainContent_PublicPageContent_txtEmail" />
+                        <span data-val-controltovalidate="MainContent_PublicPageContent_txtEmail" data-val-errormessage="*Email is required." data-val-display="Dynamic" id="MainContent_PublicPageContent_requiredCodeValidator" class="required" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="display:none;">*Email is required.</span>
+                        <span data-val-controltovalidate="MainContent_PublicPageContent_txtEmail" data-val-errormessage="*This Email is already exist." data-val-display="Dynamic" id="MainContent_PublicPageContent_existVaidator" class="alreadyExist" data-val="true" data-val-evaluationfunction="CustomValidatorEvaluateIsValid" style="display:none;">*This Email is already exist.</span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-2">
+                        <span id="MainContent_PublicPageContent_lblPhoneNo">Phone No.</span>
+                    </div>
+                    <div class="col-md-10">
+                        <input name="ctl00$ctl00$MainContent$PublicPageContent$txtPhoneNo" type="tel" id="MainContent_PublicPageContent_txtPhoneNo" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-2">
+                        <span id="MainContent_PublicPageContent_lblMessage">Message</span>
+                    </div>
+                    <div class="col-md-10">
+                        <textarea name="ctl00$ctl00$MainContent$PublicPageContent$txtMessage" rows="8" cols="60" id="MainContent_PublicPageContent_txtMessage"></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-9 col-md-offset-3">
+                        <input type="submit" name="ctl00$ctl00$MainContent$PublicPageContent$btnRegister" value="Send" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl00$MainContent$PublicPageContent$btnRegister&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="MainContent_PublicPageContent_btnRegister" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <p>Address: </p>
+        <address>
+            139 Carrington Rd, Mount Albert, <br />
+            Auckland 1025<br />
+            <abbr title="Phone">P:</abbr>
+            09-815 4321
+        </address>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51053.17625208108!2d174.6845213!3d-36.89457005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xac4fd7893e9a560f!2sUnitec+Institute+of+Technology!5e0!3m2!1szh-CN!2snz!4v1494640218772" width="650" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+        <address>
+            <strong>Support:</strong> <a href="mailto:admin@email.com">admin@email.com</a><br />
+            <strong>Marketing:</strong> <a href="mailto:admin@email.com">admin@email.com</a>
+        </address>

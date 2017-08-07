@@ -1,0 +1,42 @@
+@model QualityBags.Models.Supplier
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Supplier</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Eamil)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Eamil)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PhoneNoHome)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PhoneNoHome)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PhoneNoMobile)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PhoneNoMobile)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
